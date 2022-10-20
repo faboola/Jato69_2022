@@ -1,0 +1,24 @@
+* {
+    margin: 0;padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+   width: 100%;
+    border:1px solid red;
+    background:#222;
+
+    height:100vh;
+}
+
+.box {
+    background: blue;
+    width:50%;
+    height:200px;
+}
+
+.box2 {
+    background: yellow;
+    width:50%;
+    height: 200px;
+}

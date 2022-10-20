@@ -1,8 +1,97 @@
+* { /* tutti gli elementi */
+    box-sizing: border-box;
+    /* applico a TUTTI gli elementi il box-model "border-box" */
+    /* vedi: https://css-tricks.com/the-css-box-model/ 
+    e https://www.w3schools.com/css/css_boxmodel.asp */
+}
+
+body {
+    /*
+    Posso utilizzare un font-stack di sistema, sfruttando i font installati sul OS */
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+
+    font-family: 'Fira Sans', sans-serif;
+ 
+
+}
+
+img {
+    width: 100%;
+    height: auto;
+
+    /* serve per rendere fluida l'immagine*/
+
+    /* DIVERSO DA MAX-WIDTH che allarga l'immagine al massimo fino alla sua risoluzione nativa*/
+}
+
+
+
 .container {
-    width:1000px;
+
+    width: 70%;
     background-color: #dcdcdc;
+
+    margin: 0 auto;
+   /* equivale a:
 
     margin-left: auto;
     margin-right: auto;
+    */
+
+    padding:0 1rem;
+    
+    /*un valore: tutti e 4 i lati uguale*/
+    
+    /* equivale a:
+    padding-left:16px;
+    padding-right: 16px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    /* DUE VALORI: top/bottom + left/right*/
+    /* QUATTRO VALORI: top + right + bottom + left*/
+    
+    
+}
+
+h1 {
+    font-weight: 900;
+    /* posso richiamare lo spessore specifico usando valori da 100 (thin) a 900 (black). 
+
+    Normalmente:
+    300 è THIN 
+    400 è REGULAR
+    700 è BOLD
+    900 è BOLDER*/
+
+    font-size: 4rem;
+    /*dimensione font 4 volte più grande del default */
+}
+
+
+h2 {
+ font-size: 1.75rem;   
+}
+
+
+.box {
+    background-color: rgb(244, 186, 41);
+    border:1px solid #c86502;
+    padding:1rem;
+}
+
+.ingredienti {
+
+    width:30%;
+    float:left;
+
+    margin-right: 1rem;
+    margin-bottom: 1rem;
   
 }
+
+.credits {
+  text-align: center;
+}
+
+
