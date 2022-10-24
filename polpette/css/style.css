@@ -11,7 +11,6 @@ body {
     /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
 
     font-family: 'Fira Sans', sans-serif;
- 
 
 }
 
@@ -41,7 +40,7 @@ img {
     padding:0 1rem;
     
     /*un valore: tutti e 4 i lati uguale*/
-    
+   
     /* equivale a:
     padding-left:16px;
     padding-right: 16px;
@@ -93,5 +92,3 @@ h2 {
 .credits {
   text-align: center;
 }
-
-

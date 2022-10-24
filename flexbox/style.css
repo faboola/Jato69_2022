@@ -1,0 +1,49 @@
+.mainHeader {
+
+    background:#999;
+
+   
+    display: flex;
+
+    /*flex-direction: row; */
+    /*justify-content:flex-start*/
+    /*align-items: stretch*/
+
+    /* flex-direction: column; cambia main e cross axis*/
+
+    /*flex-direction: row-reverse; inverte la direzione dell'asse*/
+   
+    /* flex-direction: column-reverse; inverte la direzione dell'asse */
+    justify-content: space-between; /*asse principale*/
+    align-items: center; /*cross-axis*/
+}
+
+
+.gallery {
+    display: flex;
+    /* DEFAULT: non andare a capo ma allinea sempre gli oggetti sulla stessa riga*/
+   /*  flex-wrap: nowrap; */
+
+   /* se voglio andare a capo quando lo spazio finisce*/
+   flex-wrap: wrap; /*fondamentale per layout su più righe*/
+}
+
+.galleryItem {
+    width: 25%;
+}
+
+.galleryItem img { /*solo le immagini dentro elementi con classe .galleryItem */
+    width: 100%;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    MENU                                    */
+/* -------------------------------------------------------------------------- */
+.logo img {
+    width:100px;
+}
+
+.mainMenu ul {
+
+}
