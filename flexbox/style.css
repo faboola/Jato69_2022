@@ -45,5 +45,33 @@
 }
 
 .mainMenu ul {
+    list-style-type: none;
+    display: flex;
+   
+    /*definisco lo spazio tra gli elementi*/
+    column-gap: 3rem;
 
+}
+
+.mainMenu ul li { /*tutti gli LI dentro UL dentro .mainMenu*/
+    /* margin-right: 1rem; */
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   SEZIONI                                  */
+/* -------------------------------------------------------------------------- */
+
+#confezione {
+    display: flex;
+
+}
+
+.sectionImage {
+    width: 30%;
+}
+
+.sectionText {
+    width: 70%;
 }
