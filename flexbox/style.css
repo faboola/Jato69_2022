@@ -14,6 +14,7 @@
     /*flex-direction: row-reverse; inverte la direzione dell'asse*/
    
     /* flex-direction: column-reverse; inverte la direzione dell'asse */
+
     justify-content: space-between; /*asse principale*/
     align-items: center; /*cross-axis*/
 }

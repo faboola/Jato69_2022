@@ -1,0 +1,7 @@
+* { /* tutti gli elementi */
+    box-sizing: border-box;
+    /* applico a TUTTI gli elementi il box-model "border-box" */
+    /* vedi: https://css-tricks.com/the-css-box-model/ 
+    e https://www.w3schools.com/css/css_boxmodel.asp */
+}
+
