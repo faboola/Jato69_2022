@@ -5,3 +5,56 @@
     e https://www.w3schools.com/css/css_boxmodel.asp */
 }
 
+body {
+    font-family: 'Anek Telugu', sans-serif;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-weight: 800;
+}
+
+.container {
+    width:70%;
+    margin:0 auto;
+}
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                HERO SECTION                                */
+/* -------------------------------------------------------------------------- */
+
+#hero {
+    background-image: url('../images/rental-hero.jpg');
+    background-size: cover; /*adatta l'immagine di sfondo per coprire sempre lo spazio*/
+    background-position: center center; /*ridimensiona e adatta partendo dal centro */
+
+    background-repeat: no-repeat; /*evita l'affiancamento dell'immagine*/
+
+    height:100vh; /*viewport height, unità di misura relativa all'ALTEZZA del viewport*/
+
+    color:#efefef;
+
+    /*centro la call to action*/
+
+    display: flex;
+    justify-content: center; /*centro sul main axis (orizzontale)*/
+    align-items: center; /*centro sul cross axis (verticale)*/
+
+}
+
+.callToAction {
+    text-align:center;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                SEZIONE NEWS                                */
+/* -------------------------------------------------------------------------- */
+
+.newsBox {
+    display: flex;
+
+    align-items: center; /*align funziona sull cross-axis (asse Y)*/
+}
