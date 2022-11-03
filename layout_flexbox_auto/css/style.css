@@ -24,6 +24,20 @@ img {
     height: auto;
 }
 
+.button {
+    background:#c01717;
+    color:#ffffff;
+    /*primo valore: top/bottom | secondo valore: left/right*/
+    padding: 0.5rem 1.5rem; 
+
+    text-decoration:none;
+    border-radius:6px;
+    transition: all 0.25s;
+}
+
+.button:hover {
+    background: #6c0c0c;
+}
 
 
 
@@ -54,6 +68,11 @@ img {
     text-align:center;
 }
 
+.callToAction h1 {
+    text-transform:uppercase; /*tutto maiuscolo*/
+    margin-bottom: 0;
+}
+
 /* -------------------------------------------------------------------------- */
 /*                                SEZIONE NEWS                                */
 /* -------------------------------------------------------------------------- */
@@ -61,13 +80,12 @@ img {
 #news {
     padding-top: 6rem;
     padding-bottom: 6rem;
+
 }
 
 .newsBox {
     display: flex;
-
     align-items: center; /*align funziona sull cross-axis (asse Y)*/
-
     margin-bottom:4rem;
 }
 
@@ -78,7 +96,17 @@ img {
 .newsText {
     width:60%;
     padding:2rem;
+
+    font-size: 1.5rem;
+
 }
+
+.newsText h2 {
+    font-size: 2.5rem;
+
+}
+
+
 
 /*con la pseudoclasse :nth-of-type() posso agire solo sugli elementi N di quel selettore. 
 Ad esempio qui seleziono solo gli elementi PARI con classe .newsBox */
@@ -97,5 +125,43 @@ Ad esempio qui seleziono solo gli elementi PARI con classe .newsBox */
 /* -------------------------------------------------------------------------- */
 
 #spacer {
+    /*spacer con effetto pseudo-parallasse*/
     background-image: url('../images/spacer.jpg');
+    height: 30rem;
+
+    background-size: cover;
+    background-position: center center;
+
+    background-repeat: no-repeat;
+
+    /*questo blocca il background: non scorre più*/
+    background-attachment: fixed;
+
 }
+
+/* -------------------------------------------------------------------------- */
+/*                               SEZIONE GALLERY                              */
+/* -------------------------------------------------------------------------- */
+
+#gallery {
+padding-top:6rem;
+}
+
+.galleryWrapper {
+    display: flex;
+    flex-wrap: wrap; /*vai a capo quando lo spazio finisce!*/
+}
+
+.galleryItem {
+    width: 25%;
+    padding:1rem;   
+}
+
+.galleryItem img {
+    width:100%;
+}
+
+
+
+
+
