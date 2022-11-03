@@ -19,6 +19,11 @@ h1 {
     margin:0 auto;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 
 
 
@@ -53,8 +58,44 @@ h1 {
 /*                                SEZIONE NEWS                                */
 /* -------------------------------------------------------------------------- */
 
+#news {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
 .newsBox {
     display: flex;
 
     align-items: center; /*align funziona sull cross-axis (asse Y)*/
+
+    margin-bottom:4rem;
+}
+
+.newsImage {
+    width:40%;
+}
+
+.newsText {
+    width:60%;
+    padding:2rem;
+}
+
+/*con la pseudoclasse :nth-of-type() posso agire solo sugli elementi N di quel selettore. 
+Ad esempio qui seleziono solo gli elementi PARI con classe .newsBox */
+
+.newsBox:nth-of-type(even) .newsImage {
+    order:1;
+}
+
+.newsBox:nth-of-type(even) .newsText {
+    text-align: right;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   SPACER                                   */
+/* -------------------------------------------------------------------------- */
+
+#spacer {
+    background-image: url('../images/spacer.jpg');
 }
