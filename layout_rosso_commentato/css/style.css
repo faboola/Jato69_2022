@@ -1,0 +1,168 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins',sans-serif;
+}
+
+img { /* rendere le immagini fluide */
+    max-width: 100%;
+    height:auto;
+}
+
+a {
+    color:#C32D29;
+}
+
+.button {
+    background-color: #C32D29;
+    color:#efefef;
+    text-decoration: none;
+
+    padding:0.5rem /*sopra e sotto*/ 1.25rem; /*sinistra e destra*/ 
+
+    border-radius:6px;
+
+}
+
+.container {
+    width:70%;
+    margin:0 auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    MENU                                    */
+/* -------------------------------------------------------------------------- */
+
+.logo img {
+    width:8rem;
+    height: auto;
+
+    /*se voglio evitare che l'immagine si rimpicciolisca oltre una certa dimensione,
+    posso impostare la proprietà min-width*/
+
+    min-width: 5rem;
+}
+
+#mainHeader .container { /*isolo il container dentro #mainHeader*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.mainMenu ul {
+    list-style-type: none;
+    padding: 0;
+
+    /*allineo gli LI*/
+    display: flex;
+    column-gap: 3rem;
+}
+
+.mainMenu a {
+    color: #666;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    HERO                                    */
+/* -------------------------------------------------------------------------- */
+
+#hero .container {
+    display: flex;
+
+    align-items: center;
+}
+
+.heroImg, .cta { /* seleziono DUE elementi */  
+    
+    width: 50%;
+    
+}
+
+.cta p {
+    margin-bottom: 2rem;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   SERVIZI                                  */
+/* -------------------------------------------------------------------------- */
+
+#servizi {
+    background-color:#C32D29;
+    color:#efefef;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#servizi .container {
+    display: flex;
+    column-gap: 2rem;
+}
+
+.servizio {
+    text-align: center;
+}
+
+.servizio img {
+    padding:2rem;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   SOCIAL                                   */
+/* -------------------------------------------------------------------------- */
+
+#social .container {
+    display: flex;
+    align-items: center;
+}
+
+#social .sectionText, #social .sectionImage {
+    /*selettore doppio: tutti i .sectionText dentro #social
+    e tutti i .sectionImage dentro #social*/
+    width: 50%;
+
+}
+
+#social .sectionText {
+    text-align: right;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   FOOTER                                   */
+/* -------------------------------------------------------------------------- */
+
+#mainFooter {
+    background: #222;
+    color:#999;
+
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+}
+
+.footerWrapper {
+    display: flex;
+    justify-content: space-between;
+
+    /*divido le colonne*/
+
+    column-gap: 2.5rem;
+
+}
+
+.footerTitle {
+    font-weight: 700; /*equivale a BOLD */
+    border-bottom:1px solid #666;
+    margin-bottom: 1rem;
+}
+
+.fCol {
+    width: 33%;
+}

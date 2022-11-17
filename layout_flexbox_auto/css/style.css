@@ -211,3 +211,7 @@ padding-top:6rem;
 
 
 
+.box:nth-of-type(odd) {
+    background: red;
+}
+
