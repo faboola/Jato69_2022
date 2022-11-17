@@ -1,0 +1,67 @@
+
+
+.box {
+   
+    background:blue;
+    color:white;
+
+}
+
+/*ESEMPIO DI MAX-WIDTH E MIN-WIDTH COMBINATE*/
+
+@media screen and (max-width:380px) and (min-width:320px) {
+    body {
+        background: black;
+    }
+}
+
+/*intercettare l'orientamento dello schermo:*/
+@media (orientation:portrait) {
+
+
+    body {
+        text-align: center;
+    }
+
+}
+
+/*se invece voglio selezionare solo l'orientamento orizzontale*/
+
+@media (orientation:landscape) {
+    body {
+        text-align: right;
+    }
+}
+
+
+ /*schermi da 576px in su */
+@media screen and (min-width:576px) {
+    
+    .box {
+        background:green;
+        font-size: 3rem;
+    }
+
+}
+
+/*schermi da 992px in su*/
+
+@media screen and (min-width:992px) {
+    
+    
+    
+    .box {
+        background: orangered;
+    }
+    
+}
+
+
+/*schermi da 1200px in su */
+
+@media screen and (min-width:1200px) {
+
+    .box {
+        background:black;
+    }
+}
