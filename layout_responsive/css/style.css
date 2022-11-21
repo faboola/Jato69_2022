@@ -28,6 +28,34 @@ img {
     height: auto;
 }
 
+/* #hero {
+    background-image: url('../img/hero_mobile.jpg');
+   
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    height:100vh;
+} */
+
+#hero {
+    /*serve ad attivare il position:absolute di .cta */
+    position: relative;
+}
+
+#hero .cta {
+    position: absolute; /*posiziona in base a coordinate*/
+
+    /*assegno le coordinate*/
+    left:0;
+    bottom:0;
+
+    width:100%;
+   
+    background:#ffffff66; /*trasparenza in esadecimale*/
+    /* l'ultima coppia di valore è la trasparenza*/
+}
+
 /* CONTAINER */
 
 .container {
@@ -55,6 +83,10 @@ img {
 /* -------------------------------------------------------------------------- */
 
 @media screen and (min-width:768px) {
+
+    /* #hero {
+        background-image: url('../img/hero_tablet.jpg');
+    } */
 
     .container {
         width:90%;
@@ -85,6 +117,10 @@ img {
 /* -------------------------------------------------------------------------- */
 
 @media screen and (min-width:992px) {
+
+    /* #hero {
+        background-image: url('../img/hero_desktop.jpg');
+    } */
     
     .container {
         width:80%;

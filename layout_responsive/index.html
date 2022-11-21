@@ -12,22 +12,52 @@
 </head>
 <body>
 
-    <header id="mainHeader"></header>
+    <header id="mainHeader">
+        <div class="container">
+            <div class="menuWrapper">
+                <div class="logo">LOGO</div>
+                <nav class="mainMenu">
+                    <ul>
+                        <li>
+                            <a href="">HOME</a>
+                        </li>
+                        <li>
+                            <a href="">PRICING</a>
+                        </li>
+                        <li>
+                            <a href="">CONTACT</a>
+                        </li>
+                        <li>
+                            <a href="">ABOUT</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
 
     <main>
 
     <section id="hero">
         <picture>
+            <!-- prima il min-width più grande -->
             <source
             srcset="img/hero_desktop.jpg"
             media="(min-width:992px)">
-
+            
+            <!-- questa è la versione da mobile -->
             <source 
             srcset="img/hero_tablet.jpg"
             media="(min-width:768px)">
 
+
             <img src="img/hero_mobile.jpg" alt="">
         </picture>
+
+        <div class="cta">
+            <h1>Lorem, ipsum.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias, expedita.</p>
+        </div>
       
     </section>    
 
