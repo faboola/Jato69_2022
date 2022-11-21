@@ -28,6 +28,42 @@ img {
     height: auto;
 }
 
+/* -------------------------------------------------------------------------- */
+/*                                    MENU                                    */
+/* -------------------------------------------------------------------------- */
+#mainHeader {
+    position: fixed; /*SEMPRE fisso, indipendente dallo scroll*/
+    top:0;
+    left:0;
+
+    z-index:1;
+
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    width:100%;
+    /*position fa stringere gli elementi!*/
+    /*devo ridargli la larghezza 100%*/
+
+    background:rgba(255,255,255,0.5);
+   /* backdrop-filter: blur(10px); */
+    backdrop-filter: blur(10px);
+}
+
+.menuWrapper {
+    display: flex; /*affianco logo e menu*/
+    justify-content: space-between; /*sposto ai lati*/
+    align-items: center; /*allineo in verticale*/
+}
+
+.mainMenu ul {
+    list-style-type: none;
+    padding: 0;
+
+    display: flex; /*affianco i <li> */
+    column-gap: 1rem; /*creo uno spazio tra gli <li>*/
+}
+
 /* #hero {
     background-image: url('../img/hero_mobile.jpg');
    
@@ -77,6 +113,8 @@ img {
     width:50%;
     padding:0.5rem;
 }
+
+
 
 /* -------------------------------------------------------------------------- */
 /*                         SCHERMI PIU GRANDI DI 768PX                        */
