@@ -60,21 +60,26 @@
 
     <div class="formInput">
         <label for="citta">Città</label><br>
-        <input type="text" id="citta" name="citta">
+        <input type="text" id="citta" name="citta" value="Torino">
+        <!-- posso mettere un value predefinito con l'attributo value="" -->
     </div>
 
     <div class="formInput">
+        <label for="provincia">Provincia</label><br>
         <select name="provincia" id="provincia" required>
 
             <!-- il VALUE è il valore passato dal form -->
             <!-- dentro il tag c'è il testo che appare nella pagina -->
 
             <!-- il primo valore a null serve per il controllo del form -->
+<!-- 
+            se voglio un'opzione pre-selezionata uso
+            l'attributo selected dentro option -->
+
             <option value="">Seleziona la provincia</option>
-            <option value="">seleziona</option>
             <option value="AG">Agrigento</option>
             <option value="AL">Alessandria</option>
-            <option value="AN">Ancona</option>
+            <option value="AN" >Ancona</option>
             <option value="AO">Aosta</option>
             <option value="AR">Arezzo</option>
             <option value="AP">Ascoli Piceno</option>
@@ -165,7 +170,7 @@
             <option value="TA">Taranto</option>
             <option value="TE">Teramo</option>
             <option value="TR">Terni</option>
-            <option value="TO">Torino</option>
+            <option value="TO" >Torino</option>
             <option value="TP">Trapani</option>
             <option value="TN">Trento</option>
             <option value="TV">Treviso</option>
@@ -182,6 +187,60 @@
         </select>
     </div>
 
+    <div class="formInput">
+        <label for="nascita">Data di nascita</label>
+
+       <!--  la visualizzazione dipende dalla lingua del browser
+        ma il formato inviato è sempre AAAA-MM-GG -->
+
+        <input type="date" name="nascita" id="nascita" min="2000-11-21">
+    
+    </div>
+
+    <div class="formInput">
+        <!-- set di scelte mutualmente esclusive -->
+
+        <!-- il name è lo stesso per i 3 input diversi -->
+        <label for="genere_m">M</label>
+        <input type="radio" name="genere" value="m" id="genere_m">
+       
+        <label for="genere_f">F</label>
+        <input type="radio" name="genere" value="f" id="genere_f">
+        
+        <label for="genere_altro">Altro</label>
+        <input type="radio" name="genere" value="altro" id="genere_altro">
+
+    </div>
+
+    <div class="formInput">
+
+        
+        <label for="calcio">Calcio</label>
+        <input type="checkbox" name="interessi" id="calcio" value="calcio">
+
+
+        <label for="tennis">Tennis</label>
+        <input type="checkbox" name="interessi" id="tennis" value="tennis">
+
+        <label for="rugby">Rugby</label>
+        <input type="checkbox" name="interessi" id="rugby" value="rugby">
+
+        <label for="baseball">Baseball</label>
+        <input type="checkbox" name="interessi" id="baseball" value="baseball">
+
+
+    </div>
+
+    <div class="formInput">
+
+
+
+        <textarea name="messaggio" id="messaggio" cols="30" rows="10" maxlength="120"></textarea>
+
+    </div>
+
+
+
    <!-- ----------------------------------------------------------------------- -->
    <!--                             PULSANTI INVIO                              -->
    <!-- ----------------------------------------------------------------------- -->
@@ -190,7 +249,7 @@
    <!-- Oppure posso usare il tag button -->
     <button type="submit">Invia</button>
 
-
+    <button type="reset">Cancella tutto!</button>
 
 
     </form>
