@@ -15,26 +15,44 @@
     <header id="mainHeader"></header>
 
     <main>
+
+    <section id="hero">
+        <picture>
+            <source
+            srcset="img/hero_desktop.jpg"
+            media="(min-width:992px)">
+
+            <source 
+            srcset="img/hero_tablet.jpg"
+            media="(min-width:768px)">
+
+            <img src="img/hero_mobile.jpg" alt="">
+        </picture>
+      
+    </section>    
+
         <section id="servizi">
 
-            <div class="servizio">
-                <div class="sImage">
-                    <img src="https://source.unsplash.com/600x400?coffee" alt="#">
-                </div>
-                <div class="sText">
-                    <h2>Lorem, ipsum dolor.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sit dolorem aliquam et doloremque perspiciatis amet in omnis repudiandae aspernatur!</p>
-                </div>
-            </div>
+            <div class="container">
 
-            
-            <div class="servizio">
-                <div class="sImage">
-                    <img src="https://source.unsplash.com/600x400?sushi" alt="#">
+                <div class="servizio">
+                    <div class="sImage">
+                        <img src="https://source.unsplash.com/600x400?coffee" alt="#">
+                    </div>
+                    <div class="sText">
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sit dolorem aliquam et doloremque perspiciatis amet in omnis repudiandae aspernatur!</p>
+                    </div>
                 </div>
-                <div class="sText">
-                    <h2>Lorem, ipsum dolor.</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sit dolorem aliquam et doloremque perspiciatis amet in omnis repudiandae aspernatur!</p>
+                
+                <div class="servizio">
+                    <div class="sImage">
+                        <img src="https://source.unsplash.com/600x400?sushi" alt="#">
+                    </div>
+                    <div class="sText">
+                        <h2>Lorem, ipsum dolor.</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde sit dolorem aliquam et doloremque perspiciatis amet in omnis repudiandae aspernatur!</p>
+                    </div>
                 </div>
             </div>
 
@@ -45,7 +63,7 @@
 
         <section id="gallery">
 
-            <div class="galleryWrapper">
+            <div class="galleryWrapper container">
 
                 <div class="galleryImg">
                     <img src="https://source.unsplash.com/400x400?london" alt="">
