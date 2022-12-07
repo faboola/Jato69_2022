@@ -4,7 +4,7 @@ body {
 }
 
 /* line 5, ../../../../../Users/davide/Documents/FABOOLA/WEB/Jato69/sass_intro/scss/_fonts.scss */
-h1 {
+h1, .heroText p {
   font-size: 3rem;
   font-weight: 900;
 }
