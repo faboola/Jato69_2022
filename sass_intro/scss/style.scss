@@ -1,0 +1,51 @@
+@import 'variables';
+@import 'fonts';
+
+body {
+    background: $bodyBg;
+    color:$mainColor;
+}
+
+.mainMenu {
+    
+    ul {
+        list-style-type: none;
+        display: flex;
+        column-gap: 1rem;
+        
+        a {
+            color:$linkColor;
+
+            &:hover { //a con :hover
+                color:darken($linkColor,30%);
+            }
+
+            &.active {
+                color:complement($linkColor);
+                 //colore complementare se A ha anche classe .active
+            }
+
+        }
+       
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                    HERO                                    */
+/* -------------------------------------------------------------------------- */
+
+#hero {
+    height: 100vh;
+    background-image: url('../herobg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroText {
+    background-color: transparentize($black,0.75);
+}
