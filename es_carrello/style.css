@@ -1,0 +1,75 @@
+body {
+    font-family: 'Encode Sans',sans-serif;
+}
+
+.mainHeader {
+    margin-bottom: 5rem;
+}
+    
+/* body {
+    background: #333;
+    color:#efefef;
+} */
+
+.logo {
+    height: 3rem;
+}
+
+/* .cartTitle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+.cartTitle h1 {
+    font-weight: 900;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                 ELIMINARE LE FRECCINE DA INPUT TYPE NUMBER                 */
+/* -------------------------------------------------------------------------- */
+/*   VEDI: https://www.w3schools.com/howto/howto_css_hide_arrow_number.asp    */
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input#qty {
+    width:4rem; /*riduco le dimensioni*/
+    text-align: center; /*allineo il valore all'interno*/
+
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   SIDEBAR                                  */
+/* -------------------------------------------------------------------------- */
+.sidebarTitle h2 {
+    font-weight: 900;
+}
+.sidebarIntro {
+    /*in alternativa posso usare la classe fw-bold, ma otterrei un bold 700 */
+    font-weight: 600;
+}
+
+.qtyBadge {
+    padding:0.2rem 0.5rem;
+    border-radius:6px;
+}
+
+/* .objectQty {
+    text-transform: uppercase;
+} */
+
+.formTot {
+    font-weight: 600;
+}

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body class="text-light bg-dark">
+
+
+    <header class="mainHeader">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <!-- NOTA: devo dare un'altezza al SVG (vedi css) -->
+                    <img src="img/logo.svg" alt="logo" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Novità</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Chi Siamo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Negozio</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Carrello</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-instagram"></i></a>
+                        </li>
+
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><i class="bi bi-twitter"></i></a>
+                        </li>
+
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="row">
+                <!-- CARRELLO -->
+                <div class="cart col-lg-8">
+                    <div class="cartTitle d-flex justify-content-between align-items-center">
+
+                        <h1 class="fw-bolder">Il tuo carrello</h1>
+                        <div class="text-muted">3 Items</div>
+
+                    </div>
+
+                    <hr class="my-5">
+
+                    <!-- ELEMENTO CARRELLO -->
+                    <div class="cartItem">
+                        <div class="row align-items-center">
+                            <div class="cartImg col-12 col-lg-2">
+                                <img class="w-100" src="img/strokes.jpg" alt="The Strokes - The New Abnormal">
+                            </div>
+                            <div class="cartFormat col-6 col-lg-3">
+                                <div class="text-muted">Vinile</div>
+                                <div class="discTitle">The New Abnormal</div>
+                            </div>
+                            <div class="cartQty col-6 col-lg-3 d-flex">
+
+                                <button class="btn btn-link" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                    <i class="bi bi-dash-circle"></i>
+                                </button>
+
+                                <input type="number" value="1" name="qty" id="qty-id1" class="form-control form-control-sm">
+
+                                <button class="btn btn-link" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                    <i class="bi bi-plus-circle"></i>
+                                </button>
+
+                            </div>
+                            <div class="cartPrice col-6 col-lg-2 ">
+                                <div>€ 20.00</div>
+                            </div>
+
+                            <div class="cartRemove col-6 col-lg-2 text-end">
+                                <i class="bi bi-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FINE ELEMENTO CARRELLO -->
+
+                    <hr class="my-5">
+
+
+                    <!-- ELEMENTO CARRELLO -->
+                    <div class="cartItem">
+                        <div class="row align-items-center">
+                            <div class="cartImg col-12 col-lg-2">
+                                <img class="w-100" src="img/alicia.jpg" alt="Alicia Keys - Alicia">
+                            </div>
+                            <div class="cartFormat col-6 col-lg-3">
+                                <div class="text-muted">Vinile</div>
+                                <div class="discTitle">Alicia</div>
+                            </div>
+                            <div class="cartQty col-6 col-lg-3 d-flex">
+
+                                <button class="btn btn-link" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                    <i class="bi bi-dash-circle"></i>
+                                </button>
+
+                                <input type="number" value="1" name="qty" id="qty-id2" class="form-control form-control-sm">
+
+                                <button class="btn btn-link" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                    <i class="bi bi-plus-circle"></i>
+                                </button>
+
+                            </div>
+                            <div class="cartPrice col-6 col-lg-2 ">
+                                <div>€ 20.00</div>
+                            </div>
+
+                            <div class="cartRemove col-6 col-lg-2 text-end">
+                                <i class="bi bi-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FINE ELEMENTO CARRELLO -->
+
+                    <hr class="my-5">
+
+                    <!-- ELEMENTO CARRELLO -->
+                    <div class="cartItem">
+                        <div class="row align-items-center">
+                            <div class="cartImg col-12 col-lg-2">
+                                <img class="w-100" src="img/radiohead.jpg" alt="Radiohead - OK Computer">
+                            </div>
+                            <div class="cartFormat col-6 col-lg-3">
+                                <div class="text-muted">Vinile</div>
+                                <div class="discTitle">Ok Computer</div>
+                            </div>
+                            <div class="cartQty col-6 col-lg-3 d-flex">
+
+                                <button class="btn btn-link" onclick="this.parentNode.querySelector('input[type=number]').stepDown()">
+                                    <i class="bi bi-dash-circle"></i>
+                                </button>
+
+
+
+                                <input type="number" value="1" name="qty" id="qty-id3" class="form-control form-control-sm">
+
+                                <button class="btn btn-link" onclick="this.parentNode.querySelector('input[type=number]').stepUp()">
+                                    <i class="bi bi-plus-circle"></i>
+                                </button>
+
+                            </div>
+                            <div class="cartPrice col-6 col-lg-2 ">
+                                <div>€ 20.00</div>
+                            </div>
+
+                            <div class="cartRemove col-6 col-lg-2 text-end">
+                                <i class="bi bi-trash"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- FINE ELEMENTO CARRELLO -->
+
+
+
+                </div>
+                <!-- FINE CARRELLO -->
+
+                <!-- RIEPILOGO -->
+                <div class="sidebar col-lg-4">
+                    <!--  la classe d-flex serve solo per far comportare in altezza questo div allo stesso modo del div .cartTitle -->
+                    <div class="sidebarTitle d-flex">
+
+                        <!-- NOTA: fs-1 è lo stesso font-size di H1 -->
+                        <h2 class="fs-1">Riepilogo Ordine</h2>
+                    </div>
+
+                    <hr class="my-5">
+
+                    <div class="sidebarIntro d-flex justify-content-between fs-5 mb-3">
+                        <div class="objQty text-uppercase">Oggetti: <span class="qtyBadge bg-primary">13</span></div>
+                        <div class="cartPrice">€ 60.00</div>
+                    </div>
+
+                    <div class="sidebarForm">
+                        <div class="fs-5 mt-5 mb-1">SPEDIZIONE</div>
+
+                        <label for="spedizione" class="form-label">Scegli il metodo di spedizione</label>
+
+                        <select name="spedizione" id="spedizione" class="form-select">
+
+                            <option value="standard">Standard - €5.00</option>
+                            <option value="rapida">Rapida - €9.00</option>
+                            <option value="ecofriendly">Consegna a cavallo eco-friendly - €39.00</option>
+
+                        </select>
+
+                        <div class="fs-5 mt-3 mb-1">CODICE SCONTO</div>
+
+                        <label for="sconto" class="form-label">Inserisci il codice sconto</label>
+                        <input type="text" id="sconto" name="sconto" class="form-control">
+
+                        <div class="formTot d-flex justify-content-between fs-5 mt-3">
+                            <div class="totLabel">TOTALE:</div>
+                            <div class="totNum">€100.00</div>
+                        </div>
+
+                        <button class="btn btn-primary w-100 mt-5">Acquista</button>
+
+                    </div>
+
+                </div>
+                <!-- FINE RIEPILOGO -->
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
