@@ -48,4 +48,8 @@ body {
 
 .heroText {
     background-color: transparentize($black,0.75);
+
+    p {
+        @extend h1; //extend prende le caratteristiche di un selettore e le replica 
+    }
 }
