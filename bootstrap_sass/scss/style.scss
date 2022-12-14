@@ -6,7 +6,19 @@
 
 // 2. Include any default variable overrides here
 
+/* -------------------------------------------------------------------------- */
+/*                            OVERRIDE DI VARIABILI                           */
+/* -------------------------------------------------------------------------- */
 
+// scss-docs-start theme-color-variables
+$primary:       #ffcc00 !default;
+// $secondary:     $gray-600 !default;
+// $success:       $green !default;
+// $info:          $cyan !default;
+// $warning:       $yellow !default;
+// $danger:        $red !default;
+// $light:         $gray-100 !default;
+// $dark:          $gray-900 !default;
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
@@ -19,6 +31,7 @@
 @import "../node_modules/bootstrap/scss/root";
 
 // Layout & components
+@import "../node_modules/bootstrap/scss/utilities";
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
 
@@ -52,6 +65,8 @@
 
 // Helpers
 @import "../node_modules/bootstrap/scss/helpers";
+
+@import "../node_modules/bootstrap/scss/utilities/api";
 
 /* -------------------------------------------------------------------------- */
 /*                          QUA IMPORTO I MIEI STILI                          */
