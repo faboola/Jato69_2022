@@ -20,6 +20,16 @@ $primary:       #ffcc00 !default;
 // $light:         $gray-100 !default;
 // $dark:          $gray-900 !default;
 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1600px
+) ;
+
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
 
