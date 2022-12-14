@@ -1,57 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- STILI PER SWIPER CAROUSEL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Sass + Bootstrap</title>
 </head>
+
 <body>
 
     <header id="mainHeader">
         <nav class="navbar navbar-expand-lg bg-primary">
             <div class="container">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                  </li>
-                  <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dropdown
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Action</a></li>
-                      <li><a class="dropdown-item" href="#">Another action</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
                     </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
-                  </li>
-                </ul>
-                <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-              </div>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
             </div>
-          </nav>
+        </nav>
     </header>
     <main>
+
+        <!--  SWIPER SLIDER -->
+
+        <div class="container my-5">
+            <!-- Slider main container -->
+
+            <div class="swiper"> <!-- <=== qua è dove inizializza il carousel! -->
+
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+
+                    <div class="swiper-slide">
+                        <div class="card"> <!-- OCCHIO! Eliminare lo stile in linea con width:18rem -->
+                            <img src="https://source.unsplash.com/600x400" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <div class="card-title fs-5">Card title</div>
+                              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                              <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                          </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-fluid" src="https://source.unsplash.com/600x600/?miata" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-fluid" src="https://source.unsplash.com/600x600/?lotus+elise" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-fluid" src="https://source.unsplash.com/600x600/?porsche" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-fluid" src="https://source.unsplash.com/600x600/?mercedes" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-fluid" src="https://source.unsplash.com/600x600/?yaris" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-fluid" src="https://source.unsplash.com/600x600/?audi" alt="">
+                    </div>
+
+
+                    <div class="swiper-slide">
+                        <img class="img-fluid" src="https://source.unsplash.com/600x600/?bmw+m4" alt="">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <img class="img-fluid" src="https://source.unsplash.com/600x600/?ferrari" alt="">
+                    </div>
+
+            
+
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
+        </div>
+
+
         <div class="container">
             <h1 class="mainTitle">Hello World!</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nulla molestias error neque dolores? Ratione nemo sint itaque modi dolore?</p>
-        
+
             <a href="#" class="btn btn-primary">Cliccami!</a>
 
         </div>
@@ -74,7 +153,7 @@
                     <a href="#" class="button">Prenota</a>
 
                 </div>
-                
+
                 <!-- fine gallery item -->
 
 
@@ -144,5 +223,70 @@
             </div>
         </div>
     </main>
+    <!-- SCRIPT BOOTSTRAP -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- SCRIPT SWIPER CAROUSEL -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+    <script>
+        //INIZIALIZZO SWIPER
+        const swiper = new Swiper('.swiper', {
+    //--- SE VOGLIO PIU SLIDES SULLO SCHERMO --\\    
+    slidesPerView: 1, //opzione per schermi piccoli
+    spaceBetween: 10, //valore in pixel che definisce la distanza tra le slide
+  // Responsive breakpoints
+        breakpoints: {
+            // when window width is >= 576px
+            576: {
+            slidesPerView: 2,
+            spaceBetween: 20
+            },
+            // when window width is >= 768px
+            768: {
+            slidesPerView: 3,
+            spaceBetween: 30
+            },
+            // when window width is >= 992px
+            992: {
+            slidesPerView: 4,
+            spaceBetween: 40
+            }
+        },
+        //--FINE BLOCCO OPZIONE MULTI-SIDE --\\
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+
+        //PER EFFETTO TAMARRO STILE IPOD
+
+//         effect: 'coverflow',
+//   coverflowEffect: {
+//     rotate: 30,
+//     slideShadows: false,
+//   },
+
+        
+        });
+    </script>
+
 </body>
+
 </html>
