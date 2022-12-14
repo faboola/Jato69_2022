@@ -1,0 +1,31 @@
+.mainTitle {
+    font-size: 2rem;
+
+    @include media-breakpoint-up(lg) { 
+     font-size: 8rem;
+    font-weight: 900;
+}
+}
+
+//STILI GALLERY
+
+.galleryWrapper {
+    @include make-row();
+}
+
+.galleryItem {
+
+    @include make-col-ready();
+    @include make-col(12);
+
+    @include media-breakpoint-up(md) { 
+        @include make-col(6);
+    }
+
+    //media query con mixin 
+    @include media-breakpoint-up(lg) { 
+        @include make-col(3);
+      }
+
+}
+

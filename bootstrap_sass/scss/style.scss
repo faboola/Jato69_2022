@@ -11,7 +11,7 @@
 /* -------------------------------------------------------------------------- */
 
 // scss-docs-start theme-color-variables
-$primary:       #ffcc00 !default;
+$primary:       #ffcc00;
 // $secondary:     $gray-600 !default;
 // $success:       $green !default;
 // $info:          $cyan !default;
@@ -26,9 +26,13 @@ $grid-breakpoints: (
   md: 768px,
   lg: 992px,
   xl: 1200px,
-  xxl: 1400px,
-  xxxl: 1600px
-) ;
+  xxl: 1400px
+);
+
+//FONTS
+$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
