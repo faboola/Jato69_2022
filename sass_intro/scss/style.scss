@@ -1,9 +1,16 @@
+@import 'normalize';
 @import 'variables';
 @import 'fonts';
+@import 'mixins';
 
 body {
-    background: $bodyBg;
-    color:$mainColor;
+
+    // background: $bodyBg;
+    // color:$mainColor;
+
+    @include myGradient(#ffcc00,#222);
+
+
 }
 
 .mainMenu {
@@ -52,4 +59,9 @@ body {
     p {
         @extend h1; //extend prende le caratteristiche di un selettore e le replica 
     }
+}
+
+
+.ctaButton {
+    @include myButton(#ff8342,#000000,true);
 }
